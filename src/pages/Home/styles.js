@@ -23,13 +23,9 @@ export const BackgroundSection = styled.div`
 	position: relative;
     border-top: 6px solid ${(props) => props.theme.colors.brand};
 
-   
-    background: 
-        linear-gradient(
-        rgba(0, 0, 0, 0.5),  /* Cor do gradiente e opacidade */
-        rgba(0, 0, 0, 0.5)
-        ), 
-        url('/img/background-home.jpg'); 
+    background: ${(props) => props.theme.colors.secondBrand};
+    background: radial-gradient(circle, rgba(31,71,133,0.9) 0%, rgba(7,28,61,1) 100%), url('/img/background-home.jpg');
+    
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 

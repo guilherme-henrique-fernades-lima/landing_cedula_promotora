@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const ContainerFluid = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 100%;
+  background-color: ${(props) => props.backgroundColor || "transparent"};
 `;
 
 export const ContainerResponsive = styled.div`

@@ -15,7 +15,7 @@ html, body {
     min-height: 100%;    
     height: 100%;
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     background-color: ${(props) => props.theme.colors.backgroundPage};

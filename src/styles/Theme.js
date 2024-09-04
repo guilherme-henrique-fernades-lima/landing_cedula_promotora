@@ -4,6 +4,7 @@ export const lightTheme = {
     colors: {
         backgroundPage: "#F6F6F6",
         brand: "#EC590E",
-        secondBrand: "#1A3D74"
+        secondBrand: "#1A3D74",
+        text: "#212121",
     }
 };
