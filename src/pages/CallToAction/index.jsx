@@ -12,6 +12,14 @@ export default function CallToAction() {
         <S.Section>
           <S.ContentWrapper>
             <S.Content>
+              <h2>NÃO PERCA TEMPO!</h2>
+              <p>
+                Aproveite as melhores condições de crédito
+                <br /> agora e resolva suas pendências financeiras
+                <br /> de forma rápida e segura
+              </p>
+
+              <a href="">ENTRE EM CONTATO</a>
               <S.ImageManager
                 src="./img/gerente_segurando_dinheiro.png"
                 alt="Gerente da cédula promotora"

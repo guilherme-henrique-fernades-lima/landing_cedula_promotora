@@ -93,6 +93,10 @@ export const FooterInfo = styled.div`
             color: ${(props) => props.theme.colors.brand};
         }
     }
+
+    span{
+        color: #fff; 
+    }
 `;
 
 export const Divider = styled.div`  

@@ -42,5 +42,18 @@ export const WrapperInfo = styled.div`
     p{
         margin-left: 15px;
         font-weight: 700;
+        color: ${(props) => props.theme.colors.text}
+    }
+
+    a{
+        text-decoration: none;
+        color: ${(props) => props.theme.colors.text};
+        margin-left: 15px;
+        font-weight: 700;
+
+        &:hover{
+            color: ${(props) => props.theme.colors.brand};
+            text-decoration: underline;
+        }
     }
 `;

@@ -23,7 +23,13 @@ export default function Contact() {
               <div className="icon">
                 <LocationDot />
               </div>
-              <p>Address</p>
+              <a
+                href="https://maps.app.goo.gl/ECxjAGTv4ybx4JCX7"
+                target="_blank"
+              >
+                Avenida Marechal Juarez Távora, Quadra 35, Casa 25/B, Teresina,
+                64025-196
+              </a>
             </S.WrapperInfo>
             <S.WrapperInfo>
               <div className="icon">

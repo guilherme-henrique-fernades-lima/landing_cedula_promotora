@@ -59,7 +59,7 @@ export default function Footer() {
 
       <ContainerResponsive>
         <S.FooterInfo>
-          <a href="">Cédula Promotora 2024 © Todos os direitos reservados</a>
+          <span>Cédula Promotora 2024 © Todos os direitos reservados</span>
           <a href="">Desenvolvido por: GTECH</a>
         </S.FooterInfo>
       </ContainerResponsive>
