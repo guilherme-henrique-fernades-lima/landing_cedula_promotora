@@ -7,7 +7,7 @@ import * as S from "./styles";
 
 export default function Home() {
   return (
-    <ContainerFluid>
+    <ContainerFluid id="home">
       <S.BackgroundSection>
         <ContainerResponsive>
           <S.Main>

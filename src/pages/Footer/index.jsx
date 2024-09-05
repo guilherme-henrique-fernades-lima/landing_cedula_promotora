@@ -35,7 +35,23 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="wrapperNavigation">aa</div>
+          <div className="wrapperNavigation">
+            <h4>NAVEGAÇÃO</h4>
+            <ul>
+              <li>
+                <a href="#home">Início</a>
+              </li>
+              <li>
+                <a href="#about">Sobre nós</a>
+              </li>
+              <li>
+                <a href="#services">Serviços</a>
+              </li>
+              <li>
+                <a href="#contact">Contatos</a>
+              </li>
+            </ul>
+          </div>
         </S.Section>
       </ContainerResponsive>
 

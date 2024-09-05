@@ -7,6 +7,10 @@ import TitleSection from "../../components/TitleSection";
 
 import * as S from "./styles";
 
+function Card({ children }) {
+  return <S.Card>{children}</S.Card>;
+}
+
 export default function AboutUs() {
   return (
     <ContainerFluid id="about">
@@ -41,10 +45,12 @@ export default function AboutUs() {
             </S.BrandHistoryWrapper>
 
             <S.CardsBrandWrapper>
-              <p>aaaa</p>
-              <p>bbbb</p>
-              <p>cccc</p>
-              <p>dddd</p>
+              <S.Grid>
+                <Card>CARD</Card>
+                <Card>CARD</Card>
+                <Card>CARD</Card>
+                <Card>CARD</Card>
+              </S.Grid>
             </S.CardsBrandWrapper>
           </S.Content>
         </S.Section>

@@ -40,6 +40,41 @@ export const Section = styled.div`
             }
         }
     }
+
+    .wrapperNavigation{
+        display: flex;
+    	align-items: flex-end;
+	    justify-content: flex-end;
+        flex-direction: column;
+
+        h4{
+           color: #fff;
+           font-weight: 700;
+           margin-bottom: 10px;
+        }
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            
+            li{
+                margin: 5px 0;
+                font-weight: 400;
+                text-align: right;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                padding: 10px;
+
+                &:hover {
+                    color: ${(props) => props.theme.colors.brand}; 
+                }
+            }
+        }
+    }
+    }
 `;
 
 export const FooterInfo = styled.div`
