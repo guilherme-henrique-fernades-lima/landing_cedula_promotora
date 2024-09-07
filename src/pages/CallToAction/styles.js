@@ -9,6 +9,10 @@ export const Section = styled.div`
     height: 100%;
     width: 100%;
     margin: 80px 0;    
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+         padding: 50px 0;
+   }
 `;
 
 export const ContentWrapper = styled.div`

@@ -17,6 +17,10 @@ export const Content = styled.div`
     padding: 80px 0;
     height: 100%;
     width: 100%;
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+         padding: 50px 0;
+   }
 `;
 
 
@@ -25,23 +29,23 @@ export const Grid = styled.div`
     grid-template-columns: repeat(3, 1fr); 
     gap: 16px; 
     width: 100%;
-    margin-top: 80px;
-    
-    @media (max-width: 900px) {
+    margin-top: 80px;   
+
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
         grid-template-columns: repeat(2, 1fr); 
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
         grid-template-columns: 1fr; 
     }
+
 `;
 
 export const Card = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
-    /* border-radius: 8px; */
+    flex-direction: column;        
     padding: 20px;    
     text-align: center;
     border: 1px solid transparent;  
@@ -50,9 +54,7 @@ export const Card = styled.div`
     &:hover{
         background-color: #fff;
 
-        svg{
-            width: 140px;
-            height: 140px;
+        svg{           
             color: ${(props) => props.theme.colors.secondBrand};
         }
 
@@ -83,7 +85,55 @@ export const Card = styled.div`
 
     span{
         color: #fff;
+        font-size: 16px;
     }
+
+     @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+
+        svg{
+            width: 110px;
+            height: 110px;
+        }
+
+        h3{
+            font-size: 20px;
+        }
+
+        span{
+            font-size: 14px;
+        }
+
+         &:hover{
+            h3{
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
+
+        svg{
+            width: 110px;
+            height: 110px;
+        }
+
+        h3{
+            font-size: 20px;
+        }
+
+        span{
+            font-size: 14px;
+        }
+
+         &:hover{
+            h3{
+                font-size: 20px;
+            }
+        }
+
+    }
+
 `
 
 

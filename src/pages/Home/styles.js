@@ -165,6 +165,11 @@ export const ImgContent = styled.div`
     height: 100%;
     position: relative;    
 
+
+     @media (max-width: 769px) {
+        
+     }
+
 `;
 
 export const ImageManager = styled.img`

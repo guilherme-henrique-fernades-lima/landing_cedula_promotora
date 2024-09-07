@@ -12,6 +12,10 @@ export const Section = styled.div`
     height: 100%;
     width: 100%;
     padding: 80px 0;
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+         padding: 50px 0;
+   }
 `;
 
 export const Grid = styled.div`
@@ -22,15 +26,19 @@ export const Grid = styled.div`
     box-sizing: border-box;
     margin-top: 60px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
         grid-template-columns: repeat(3, 1fr); 
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
         grid-template-columns: repeat(2, 1fr); 
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        grid-template-columns: repeat(2, 1fr);
+    }    
+
+    @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
         grid-template-columns: 1fr; 
     }
 `;
@@ -74,6 +82,28 @@ export const Card = styled.div`
 
     p{
         color: ${(props) => props.theme.colors.text}
+    }
+
+     @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+
+        h3{
+            font-size: 22px;
+        }
+
+        p{
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
+
+        h3{
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 14px;
+        }
     }
 `
 

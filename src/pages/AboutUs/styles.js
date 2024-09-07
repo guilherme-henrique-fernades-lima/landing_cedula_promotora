@@ -9,6 +9,10 @@ export const Section = styled.div`
     height: 100%;
     width: 100%;
     padding: 80px 0;
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+         padding: 50px 0;
+   }
 `;
 
 export const Content = styled.div`
@@ -18,7 +22,13 @@ export const Content = styled.div`
     flex-direction: row;	
     width: 100%;
     margin-top: 20px;
-    /* padding: 40px 0; */
+
+     @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;	
+       width: 100%; 
+   }
 `;
 
 export const BrandHistoryWrapper = styled.div`
@@ -41,6 +51,15 @@ export const BrandHistoryWrapper = styled.div`
 
         }
     }
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        flex: 1;
+
+        p {
+            font-size: 14px;
+            text-align: left;            
+        }
+   }
 `;
 
 export const CardsBrandWrapper = styled.div`
@@ -49,24 +68,30 @@ export const CardsBrandWrapper = styled.div`
 	justify-content: flex-start;
     flex-direction: column;	  
     flex: .4;
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        width: 100%;           
+   }
+   
+    
 `;
 
 export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 16px; 
-    
+    width: 100%;
 
-    @media (max-width: 1200px) {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-
-    @media (max-width: 900px) {
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
         grid-template-columns: repeat(2, 1fr); 
     }
 
-    @media (max-width: 600px) {
-        grid-template-columns: 1fr; 
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+        margin-top: 30px;
+    }
+   
+    @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
+           grid-template-columns: 1fr; 
     }
 `;
 
@@ -75,7 +100,6 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;    
-    border-radius: 8px;
     padding: 20px;
     background-color: #fff;
     text-align: center;
@@ -93,6 +117,15 @@ export const Card = styled.div`
 
     span{
         color: #575757;
+        font-size: 16px;
+    }
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+          width: 100%;
+
+          span{
+            font-size: 14px;
+          }
     }
     
 `

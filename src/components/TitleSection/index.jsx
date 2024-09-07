@@ -29,6 +29,28 @@ const Title = styled.div`
     color: ${(props) =>
       props.contrastText ? "#fff" : props.theme.colors.brand};
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    border-left: 4px solid
+      ${(props) => (props.contrastText ? "#fff" : props.theme.colors.brand)};
+
+    h2 {
+      font-size: 18px;
+      margin-left: 8px;
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
+    h2 {
+      font-size: 16px;
+    }
+  }
 `;
 
 export default function TitleSection({ firstText, secondText, contrastText }) {

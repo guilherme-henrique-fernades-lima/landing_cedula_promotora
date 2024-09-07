@@ -17,15 +17,17 @@ export const ContainerResponsive = styled.div`
   width: 70%;
   transition: all 0.3s ease-in-out;
 
-  @media (max-width: 1281px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
     width: 80%;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
     width: 90%;
   }
 
-  @media (max-width: 481px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
