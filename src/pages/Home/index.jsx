@@ -44,6 +44,7 @@ export default function Home() {
                 </p>
                 <a href="">Entre em contato</a>
               </S.CTAContent>
+
               <S.ImgContent>
                 <S.ImageManager
                   src="./img/gerente-segurando-tablet.png"

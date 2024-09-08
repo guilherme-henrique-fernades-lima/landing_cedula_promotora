@@ -12,6 +12,7 @@ export const Section = styled.div`
 
     @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
          padding: 50px 0;
+         margin: 0;    
    }
 `;
 
@@ -25,6 +26,12 @@ export const ContentWrapper = styled.div`
     //border: 4px solid green;
     margin-top: 40px;
     position: relative;
+
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        margin-top: 0;
+        height: 260px;
+    }
 `;
 
 export const Content = styled.div`
@@ -64,6 +71,29 @@ export const Content = styled.div`
             transform: scale(1.1);
         }
     }
+
+     @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+
+         h2{
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+         }
+
+        p{
+            font-size: 14px;
+            text-align: center;
+        }
+
+        a{
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+        }
+     }
 `;
 
 
@@ -73,7 +103,10 @@ export const ImageManager = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
-   border-radius: 18px;
-  /* object-fit: contain;  */
-  /* object-fit: cover;  */ 
+  border-radius: 18px;
+ 
+
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    display: none;    
+  }
 `;

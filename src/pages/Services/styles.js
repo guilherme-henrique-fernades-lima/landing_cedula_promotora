@@ -86,6 +86,19 @@ export const Card = styled.div`
 
      @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
 
+
+        .circle{  
+
+            width: 110px;
+            height: 110px;           
+
+            .circleInside{              
+                width: 98px;
+                height: 98px;               
+            }
+        }
+
+
         h3{
             font-size: 22px;
         }
@@ -111,6 +124,16 @@ export const Icon = styled(Handshake)`
   color: #fff;
   width: 70px;
   height: 70px;  
+
+   @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    width: 60px;
+    height: 60px;  
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
+    width: 50px;
+    height: 50px;  
+  }
 `
 
 

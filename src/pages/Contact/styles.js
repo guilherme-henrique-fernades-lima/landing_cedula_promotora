@@ -8,11 +8,15 @@ export const Section = styled.div`
 	min-height: 100%;
     height: 100%;
     width: 100%;
-    margin: 80px 0;   
+    margin: 80px 0;  
+    
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+         margin: 30px 0;  
+    }
     
     @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
          padding: 50px 0;
-   }
+    }
 `;
 
 export const Content = styled.div`
@@ -25,6 +29,14 @@ export const Content = styled.div`
     background-color: #fff;
     margin-top: 40px;
     border-radius: 18px;
+
+     @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+        padding: 40px;
+    }
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        padding: 20px;
+    }
 `;
 
 export const WrapperInfo = styled.div`
@@ -60,4 +72,36 @@ export const WrapperInfo = styled.div`
             text-decoration: underline;
         }
     }
+
+
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+        .icon{
+            svg{
+                width: 24px;
+                height: 24px;                
+            }
+        }
+
+        p{
+            font-size: 14px;
+            
+        }
+
+        a{
+            font-size: 14px;
+           
+        }
+    }
+
+     @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        a{
+            font-size: 14px;
+            white-space: nowrap; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            width: 65ch; 
+        }
+    }
+
+
 `;

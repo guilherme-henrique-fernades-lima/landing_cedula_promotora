@@ -86,9 +86,9 @@ export const WrapperRowContent = styled.div`
     width: 100%;
     height: 100%;
     flex-grow: 1;
+    overflow: hidden;
 
-
-     @media (max-width: 769px) {
+     @media (max-width: 1000px) {
        flex-direction: column;
      }
 `;
@@ -130,8 +130,7 @@ export const CTAContent = styled.div`
         background: linear-gradient(75deg, rgba(131,50,9,1) 0%, rgba(236,89,14,1) 55%, rgba(250,119,53,1) 100%)       
     }
 
-
-     @media (max-width: 769px) {
+      @media (max-width: 1000px) {
         flex: 1;
         align-items: center;
         justify-content: flex-end;
@@ -153,6 +152,25 @@ export const CTAContent = styled.div`
         }
 
      }
+
+
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+
+        flex: .6;        
+
+        h1{
+            font-size: 28px;
+            text-align: left;
+        }
+
+        p{
+                font-size: 16px;
+        }
+
+    }
+
+
+   
 `;
 
 export const ImgContent = styled.div`
@@ -163,23 +181,16 @@ export const ImgContent = styled.div`
     flex-direction: column;
     flex: .6;
     height: 100%;
-    position: relative;    
-
-
-     @media (max-width: 769px) {
-        
-     }
+    position: relative;     
 
 `;
 
 export const ImageManager = styled.img`
+  max-width: 100%; 
+  max-height: 100%; 
   width: 100%; 
   height: 100%; 
-  /* position: absolute;
-  right: 0;
-  bottom: 0;  */
-  /* object-fit: contain;  */
-  /* object-fit: cover;   */
+  object-fit: fill; 
 `;
 
 

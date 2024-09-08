@@ -68,12 +68,54 @@ export const Section = styled.div`
                 color: #fff;
                 padding: 10px;
 
-                &:hover {
-                    color: ${(props) => props.theme.colors.brand}; 
+                    &:hover {
+                        color: ${(props) => props.theme.colors.brand}; 
+                    }
                 }
             }
         }
     }
+
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+       .wrapperNavigation{
+
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+            h4{
+                font-size: 14px;
+                text-align: center;
+            }
+
+            ul{
+
+                li{
+                    margin: 5px 0;
+                    text-align: center;
+
+                    a{
+                        font-size: 14px;
+                    }
+                }
+
+               
+                
+            }
+       }
+
+
+        .socialMedia{            
+            align-items: center;
+            justify-content: center;          
+            
+            width: 100%;
+        }
     }
 `;
 
@@ -96,6 +138,25 @@ export const FooterInfo = styled.div`
 
     span{
         color: #fff; 
+    }
+
+
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        a{
+            text-align: center;
+            font-size: 14px;
+            order: -1;
+            margin-bottom: 20px;
+        }
+        
+        span{
+            text-align: center;
+            font-size: 14px;
+        }
     }
 `;
 
