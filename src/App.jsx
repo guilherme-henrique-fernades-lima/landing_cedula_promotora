@@ -7,6 +7,8 @@ import Footer from "./pages/Footer";
 import CallToAction from "./pages/CallToAction";
 import Mission from "./pages/Mission";
 
+import FloatButtonToTop from "../src/components/FloatButtonToTop";
+
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
       <CallToAction />
       <Contact />
       <Footer />
+      {/* <FloatButtonToTop /> */}
     </>
   );
 }
