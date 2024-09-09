@@ -60,7 +60,9 @@ export default function Footer() {
       <ContainerResponsive>
         <S.FooterInfo>
           <span>Cédula Promotora 2024 © Todos os direitos reservados</span>
-          <a href="">Desenvolvido por: GTECH</a>
+          <a href="https://linktr.ee/gtech.servicos" target="_blank">
+            Desenvolvido por: GTECH
+          </a>
         </S.FooterInfo>
       </ContainerResponsive>
     </ContainerFluid>
