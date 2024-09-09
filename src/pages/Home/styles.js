@@ -90,6 +90,8 @@ export const WrapperRowContent = styled.div`
 
      @media (max-width: 1000px) {
        flex-direction: column;
+       align-items: center;
+	   justify-content: center;
      }
 `;
 
@@ -100,23 +102,26 @@ export const CTAContent = styled.div`
     flex-direction: column;   
     height: 100%;
     flex: .4;
-
+   
      h1{
         color: #fff;
-        font-weight: 900;
-        margin-bottom: 20px;
+        font-weight: 900;        
         font-size: 34px;
+        letter-spacing: 1.5px;
 
         strong{
             color: transparent; 
             font-weight: 900;
-            -webkit-text-stroke: 1px ${(props) => props.theme.colors.brand};
+            color: ${(props) => props.theme.colors.brand};
+            /* -webkit-text-stroke: 1px ${(props) => props.theme.colors.brand}; */
         }
     }
 
     p{
         color: #DFDFDF;
         margin-bottom: 40px;
+        margin-top: 20px;
+        letter-spacing: 1.5px;
     }
 
     a{
@@ -133,7 +138,7 @@ export const CTAContent = styled.div`
       @media (max-width: 1000px) {
         flex: 1;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
         padding: 0 20px;
 
          h1{
@@ -142,8 +147,8 @@ export const CTAContent = styled.div`
          }
 
           p{
-                font-size: 14px;
-                text-align: center;
+            font-size: 14px;
+            text-align: center;
         }
 
         a{
@@ -164,7 +169,25 @@ export const CTAContent = styled.div`
         }
 
         p{
-                font-size: 16px;
+            font-size: 16px;
+        }
+
+    }
+
+       @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+
+        h1{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        p{
+            text-align: center;
+            font-size: 14px;
+        }
+
+        a{
+            width: 100%;
         }
 
     }
@@ -173,24 +196,42 @@ export const CTAContent = styled.div`
    
 `;
 
-export const ImgContent = styled.div`
-    //border: 2px solid green;
+export const ImgContent = styled.div`    
     display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
+	align-items: center;
+	justify-content: center;
     flex-direction: column;
     flex: .6;
     height: 100%;
-    position: relative;     
+    position: relative;   
+   
 
+    @media (max-width: 1000px) {
+        order: -1;
+    }
 `;
 
 export const ImageManager = styled.img`
-  max-width: 100%; 
-  max-height: 100%; 
+  max-width: 600px; 
+  max-height: 600px; 
   width: 100%; 
   height: 100%; 
   object-fit: fill; 
+
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+    max-width: 500px; 
+    max-height: 500px; 
+  }
+
+   @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+    max-width: 400px; 
+    max-height: 400px; 
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    max-width: 300px; 
+    max-height: 300px; 
+  }
 `;
 
 

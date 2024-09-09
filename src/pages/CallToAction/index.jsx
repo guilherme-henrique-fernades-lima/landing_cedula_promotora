@@ -21,7 +21,7 @@ export default function CallToAction() {
 
               <a href="">ENTRE EM CONTATO</a>
               <S.ImageManager
-                src="./img/gerente_segurando_dinheiro.png"
+                src="./img/segurando-dinheiro.png"
                 alt="Gerente da cédula promotora"
               />
             </S.Content>

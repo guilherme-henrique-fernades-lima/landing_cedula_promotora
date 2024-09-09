@@ -34,8 +34,8 @@ export default function Home() {
 
             <S.WrapperRowContent>
               <S.CTAContent>
+                <h1>Transforme seus planos em realidade com a</h1>
                 <h1>
-                  Transforme seus planos em realidade com a <br />
                   <strong>CÉDULA PROMOTORA</strong>
                 </h1>
                 <p>
@@ -47,7 +47,7 @@ export default function Home() {
 
               <S.ImgContent>
                 <S.ImageManager
-                  src="./img/gerente-segurando-tablet.png"
+                  src="./img/blob-segurando-tablet.png"
                   alt="Gerente da cédula promotora"
                 />
               </S.ImgContent>
