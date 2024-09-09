@@ -60,8 +60,8 @@ export default function AboutUs() {
             <S.CardsBrandWrapper>
               <S.Grid>
                 <Card
-                  title="500+"
-                  subtitle="Mais de 500 clientes
+                  title="5000+"
+                  subtitle="Mais de 5000 clientes
 atendidos"
                 />
 
@@ -75,12 +75,6 @@ vendas de crédito"
                   title="12+"
                   subtitle="Benefícios
 atendidos"
-                />
-
-                <Card
-                  title="4+"
-                  subtitle="Mais de 4 anos de
-história"
                 />
               </S.Grid>
             </S.CardsBrandWrapper>

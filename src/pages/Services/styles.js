@@ -71,6 +71,22 @@ export const Card = styled.div`
             height: 116px;
             background-color: ${(props) => props.theme.colors.brand};
             border: 5px solid #fff;
+
+             svg{
+                    color: #fff;
+                    width: 70px;
+                    height: 70px;
+
+                    @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+                        width: 60px;
+                        height: 60px;  
+                    }
+
+                    @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
+                        width: 50px;
+                        height: 50px;  
+                    }
+                }
         }
     }
 
@@ -94,7 +110,8 @@ export const Card = styled.div`
 
             .circleInside{              
                 width: 98px;
-                height: 98px;               
+                height: 98px;                 
+               
             }
         }
 
@@ -120,21 +137,6 @@ export const Card = styled.div`
     }
 `
 
-export const Icon = styled(Handshake)`
-  color: #fff;
-  width: 70px;
-  height: 70px;  
-
-   @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
-    width: 60px;
-    height: 60px;  
-  }
-
-  @media (max-width: ${(props) => props.theme.breakpoints.xs}) {
-    width: 50px;
-    height: 50px;  
-  }
-`
 
 
 
