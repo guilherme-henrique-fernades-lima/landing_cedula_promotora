@@ -17,19 +17,28 @@ export default function Footer() {
           <div className="wrapperImgIcons">
             <S.Logo src="./img/logo.png" alt="Logo da cédula promotora" />
             <div className="socialMedia">
-              <a>
+              <a
+                href="https://wa.me/5586999335592?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20opções%20de%20empréstimo%20da%20Cédula%20Promotora."
+                target="_blank"
+              >
                 <LogoWhatsapp />
               </a>
 
-              <a>
+              <a
+                href="https://www.instagram.com/cedulapromotora?igsh=b2l2ZHczc2pnajg0"
+                target="_blank"
+              >
                 <Instagram />
               </a>
 
-              <a>
+              {/* <a>
                 <Telegram />
-              </a>
+              </a> */}
 
-              <a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100090005748525&mibextid=ZbWKwL"
+                target="_blank"
+              >
                 <FacebookSquare />
               </a>
             </div>

@@ -22,21 +22,34 @@ export const Section = styled.div`
 export const Content = styled.div`
     display: flex;
 	align-items: flex-start;
-	justify-content: flex-start;
-    flex-direction: column;	   
+	justify-content: space-between;
+    flex-direction: row;	   
     width: 100%;
-    padding: 60px;
+    padding: 40px;
     background-color: #fff;
     margin-top: 40px;
     border-radius: 18px;
+    overflow: hidden;
 
-     @media (max-width: ${(props) => props.theme.breakpoints.md}) {
-        padding: 40px;
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+        padding: 30px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
-        padding: 20px;
+        padding: 10px;
     }
+`;
+
+export const ContentInfo = styled.div`
+    display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+    flex-direction: column;	    
+     overflow: hidden;
+   
 `;
 
 export const WrapperInfo = styled.div`
@@ -46,6 +59,7 @@ export const WrapperInfo = styled.div`
     flex-direction: row;	   
     width: 100%; 
     margin: 5px 0;  
+    overflow: hidden;
 
     .icon{
         svg{
@@ -66,6 +80,7 @@ export const WrapperInfo = styled.div`
         color: ${(props) => props.theme.colors.text};
         margin-left: 15px;
         font-weight: 700;
+         overflow: hidden;
 
         &:hover{
             color: ${(props) => props.theme.colors.brand};
@@ -96,12 +111,20 @@ export const WrapperInfo = styled.div`
      @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
         a{
             font-size: 14px;
-            white-space: nowrap; 
-            overflow: hidden; 
-            text-overflow: ellipsis; 
-            width: 65ch; 
         }
     }
+`;
 
+export const ImageMap = styled.img`
+  width: 500px; 
+  height: 100%; 
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+ 
 
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+    margin-top: 20px;
+    width: 100%; 
+  }
 `;

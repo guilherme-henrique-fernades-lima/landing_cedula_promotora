@@ -143,7 +143,11 @@ export const CTAContent = styled.div`
         border-radius: 4px;
         color: #fff;       
         background-color: ${(props) => props.theme.colors.brand};
-        background: linear-gradient(75deg, rgba(131,50,9,1) 0%, rgba(236,89,14,1) 55%, rgba(250,119,53,1) 100%)       
+        //background: linear-gradient(75deg, rgba(131,50,9,1) 0%, rgba(236,89,14,1) 55%, rgba(250,119,53,1) 100%);       
+
+        &:hover{
+            opacity: 0.9;
+        }
     }
 
       @media (max-width: 1000px) {
