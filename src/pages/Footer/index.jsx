@@ -50,6 +50,9 @@ export default function Footer() {
               <li>
                 <a href="#contact">Contatos</a>
               </li>
+              <li>
+                <a href="#policy">Políticas de privacidade</a>
+              </li>
             </ul>
           </div>
         </S.Section>

@@ -28,6 +28,9 @@ export default function Home() {
                   <li>
                     <a href="#contact">Contatos</a>
                   </li>
+                  <li>
+                    <a href="#policy">Política de privacidade</a>
+                  </li>
                 </ul>
               </S.Navbar>
             </S.Header>
