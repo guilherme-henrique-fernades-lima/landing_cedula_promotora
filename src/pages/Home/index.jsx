@@ -29,7 +29,7 @@ export default function Home() {
                     <a href="#contact">Contatos</a>
                   </li>
                   <li>
-                    <a href="#policy">Política de privacidade</a>
+                    <a href="#policy">Políticas de privacidade</a>
                   </li>
                 </ul>
               </S.Navbar>
@@ -45,7 +45,13 @@ export default function Home() {
                   Libere seu crédito hoje! Simule seu empréstimo em minutos e
                   conquiste suas metas com facilidade.
                 </p>
-                <a href="">Entre em contato</a>
+
+                <a
+                  href="https://wa.me/5586999335592?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20opções%20de%20empréstimo%20da%20Cédula%20Promotora."
+                  target="_blank"
+                >
+                  Entre em contato
+                </a>
               </S.CTAContent>
 
               <S.ImgContent>
