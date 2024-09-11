@@ -22,7 +22,7 @@ export default function AboutUs() {
       <ContainerResponsive>
         <S.Section>
           <TitleSection
-            firstText="SOBRE NÓS DA"
+            firstText="SOBRE NOS DA"
             secondText="CÉDULA PROMOTORA"
           />
           <S.Content>

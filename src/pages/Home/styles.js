@@ -68,6 +68,17 @@ export const Navbar = styled.nav`
             }
         }
     }
+
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+        ul{
+            li{
+                a{
+                    font-size: 14px;
+                     padding: 5px; 
+                }
+            }
+        }
+    }
 `;
 
 export const Logo = styled.img`
